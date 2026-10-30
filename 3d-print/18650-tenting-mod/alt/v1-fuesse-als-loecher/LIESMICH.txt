@@ -1,0 +1,10 @@
+Erster Druckstand der Bodenplatte (bis 14.10.2026), abgeloest.
+
+Fehler darin, gefunden beim Nachmessen der Originalplatten:
+  * Die fuenf Gummifuss-Mulden des Originals (Ø10,4, 1 mm tief, OHNE
+    Loch) waren als M4-Schraubenloecher mit Sacksenkung gebaut.
+  * Die vier echten Schraubenloecher hatten flache Sacksenkungen statt
+    90-Grad-Kegel -- Senkkopfschrauben sassen nicht, es musste von Hand
+    nachgesenkt werden.
+  * Eine der vier Schrauben je Haelfte liegt im Akkufach; ihr Loch
+    fuehrte in den Hohlraum, der Deckel hatte keine Oeffnung.

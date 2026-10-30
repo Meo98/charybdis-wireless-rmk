@@ -1,0 +1,462 @@
+{
+  "keycap-daumen-a-L": {
+    "kippung": 76,
+    "narbe_gesamt_mm2": 4.281,
+    "polygone": 51737,
+    "richtung": 222,
+    "rippe_max_hoch": 4.0,
+    "rippe_spitze_mm2": 0.49,
+    "rippen": [
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.692,
+        "x": 5.425,
+        "y": 2.322,
+        "z": 5.014
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.789,
+        "x": -0.406,
+        "y": 4.281,
+        "z": 5.19
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.764,
+        "x": -3.683,
+        "y": 3.111,
+        "z": 4.963
+      },
+      {
+        "an": "boden",
+        "narbe_mm2": 0.49,
+        "x": -0.278,
+        "y": 0.728,
+        "z": 1.211
+      },
+      {
+        "an": "boden",
+        "narbe_mm2": 0.724,
+        "x": 2.484,
+        "y": -3.806,
+        "z": 5.144
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.822,
+        "x": 4.819,
+        "y": 0.467,
+        "z": 4.768
+      }
+    ],
+    "schwerpunkt_rand": 2.418,
+    "volumen_cap_mm3": 1273.5,
+    "volumen_fuss_mm3": 495.9
+  },
+  "keycap-daumen-a-R": {
+    "kippung": 76,
+    "narbe_gesamt_mm2": 4.215,
+    "polygone": 51772,
+    "richtung": 318,
+    "rippe_max_hoch": 4.0,
+    "rippe_spitze_mm2": 0.49,
+    "rippen": [
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.698,
+        "x": 3.604,
+        "y": 3.059,
+        "z": 4.868
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.789,
+        "x": 0.406,
+        "y": 4.281,
+        "z": 5.19
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.692,
+        "x": -5.425,
+        "y": 2.322,
+        "z": 5.014
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.822,
+        "x": -4.819,
+        "y": 0.467,
+        "z": 4.768
+      },
+      {
+        "an": "boden",
+        "narbe_mm2": 0.724,
+        "x": -2.484,
+        "y": -3.806,
+        "z": 5.144
+      },
+      {
+        "an": "boden",
+        "narbe_mm2": 0.49,
+        "x": 0.278,
+        "y": 0.728,
+        "z": 1.211
+      }
+    ],
+    "schwerpunkt_rand": 2.418,
+    "volumen_cap_mm3": 1273.5,
+    "volumen_fuss_mm3": 495.8
+  },
+  "keycap-daumen-b": {
+    "kippung": 76,
+    "narbe_gesamt_mm2": 3.625,
+    "polygone": 51677,
+    "richtung": 311,
+    "rippe_max_hoch": 4.0,
+    "rippe_spitze_mm2": 0.49,
+    "rippen": [
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.803,
+        "x": 3.495,
+        "y": 3.034,
+        "z": 5.091
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.733,
+        "x": -3.163,
+        "y": 4.855,
+        "z": 5.11
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.806,
+        "x": -4.834,
+        "y": 3.668,
+        "z": 5.193
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.793,
+        "x": -4.804,
+        "y": 1.288,
+        "z": 5.189
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.49,
+        "x": -1.099,
+        "y": -0.203,
+        "z": 1.731
+      }
+    ],
+    "schwerpunkt_rand": 1.36,
+    "volumen_cap_mm3": 1307.1,
+    "volumen_fuss_mm3": 499.6
+  },
+  "keycap-daumen-c-L": {
+    "kippung": 76,
+    "narbe_gesamt_mm2": 2.199,
+    "polygone": 51285,
+    "richtung": 30,
+    "rippe_max_hoch": 4.0,
+    "rippe_spitze_mm2": 0.49,
+    "rippen": [
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.49,
+        "x": 0.705,
+        "y": -2.089,
+        "z": 1.599
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.548,
+        "x": -2.537,
+        "y": 3.344,
+        "z": 5.099
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.617,
+        "x": -4.086,
+        "y": -0.099,
+        "z": 5.191
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.544,
+        "x": -4.501,
+        "y": -6.148,
+        "z": 5.182
+      }
+    ],
+    "schwerpunkt_rand": 1.64,
+    "volumen_cap_mm3": 1456.3,
+    "volumen_fuss_mm3": 440.1
+  },
+  "keycap-daumen-c-R": {
+    "kippung": 76,
+    "narbe_gesamt_mm2": 2.317,
+    "polygone": 51301,
+    "richtung": 150,
+    "rippe_max_hoch": 4.0,
+    "rippe_spitze_mm2": 0.49,
+    "rippen": [
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.617,
+        "x": 4.086,
+        "y": -0.099,
+        "z": 5.191
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.548,
+        "x": 2.537,
+        "y": 3.344,
+        "z": 5.099
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.49,
+        "x": -0.705,
+        "y": -2.089,
+        "z": 1.599
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.662,
+        "x": 4.281,
+        "y": -6.957,
+        "z": 5.184
+      }
+    ],
+    "schwerpunkt_rand": 1.864,
+    "volumen_cap_mm3": 1456.3,
+    "volumen_fuss_mm3": 440.1
+  },
+  "keycap-r1": {
+    "kippung": 73,
+    "narbe_gesamt_mm2": 3.109,
+    "polygone": 51693,
+    "richtung": 269,
+    "rippe_max_hoch": 4.0,
+    "rippe_spitze_mm2": 0.49,
+    "rippen": [
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.503,
+        "x": 8.145,
+        "y": 1.502,
+        "z": 2.808
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.645,
+        "x": -2.284,
+        "y": 5.341,
+        "z": 4.621
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.49,
+        "x": -8.15,
+        "y": 1.234,
+        "z": 2.68
+      },
+      {
+        "an": "boden",
+        "narbe_mm2": 0.49,
+        "x": -8.461,
+        "y": -1.083,
+        "z": 1.73
+      },
+      {
+        "an": "boden",
+        "narbe_mm2": 0.49,
+        "x": -0.816,
+        "y": -1.065,
+        "z": 1.234
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.49,
+        "x": 7.856,
+        "y": -0.704,
+        "z": 1.574
+      }
+    ],
+    "schwerpunkt_rand": 2.214,
+    "volumen_cap_mm3": 1397.1,
+    "volumen_fuss_mm3": 289.7
+  },
+  "keycap-r2": {
+    "kippung": 71,
+    "narbe_gesamt_mm2": 2.137,
+    "polygone": 51358,
+    "richtung": 270,
+    "rippe_max_hoch": 4.0,
+    "rippe_spitze_mm2": 0.49,
+    "rippen": [
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.494,
+        "x": 8.459,
+        "y": 0.998,
+        "z": 2.231
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.66,
+        "x": -2.455,
+        "y": 5.183,
+        "z": 4.717
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.493,
+        "x": -8.446,
+        "y": 1.001,
+        "z": 2.223
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.49,
+        "x": 0.288,
+        "y": 0.27,
+        "z": 1.335
+      }
+    ],
+    "schwerpunkt_rand": 0.634,
+    "volumen_cap_mm3": 1185.9,
+    "volumen_fuss_mm3": 270.2
+  },
+  "keycap-r2-homing": {
+    "kippung": 71,
+    "narbe_gesamt_mm2": 2.175,
+    "polygone": 51732,
+    "richtung": 270,
+    "rippe_max_hoch": 4.0,
+    "rippe_spitze_mm2": 0.49,
+    "rippen": [
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.494,
+        "x": 8.459,
+        "y": 0.998,
+        "z": 2.231
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.699,
+        "x": 2.435,
+        "y": 5.227,
+        "z": 4.764
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.493,
+        "x": -8.446,
+        "y": 1.001,
+        "z": 2.223
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.49,
+        "x": 0.288,
+        "y": 0.27,
+        "z": 1.335
+      }
+    ],
+    "schwerpunkt_rand": 0.635,
+    "volumen_cap_mm3": 1186.6,
+    "volumen_fuss_mm3": 270.2
+  },
+  "keycap-r3": {
+    "kippung": 69,
+    "narbe_gesamt_mm2": 6.561,
+    "polygone": 51822,
+    "richtung": 89,
+    "rippe_max_hoch": 4.0,
+    "rippe_spitze_mm2": 0.49,
+    "rippen": [
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.49,
+        "x": 8.053,
+        "y": -0.585,
+        "z": 1.797
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.49,
+        "x": 0.807,
+        "y": -0.9,
+        "z": 1.502
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.49,
+        "x": -1.479,
+        "y": -0.683,
+        "z": 1.391
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.49,
+        "x": -8.361,
+        "y": -1.285,
+        "z": 2.148
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.833,
+        "x": -6.603,
+        "y": -4.087,
+        "z": 4.085
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.735,
+        "x": -3.85,
+        "y": -5.142,
+        "z": 4.617
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.706,
+        "x": -1.756,
+        "y": -5.734,
+        "z": 5.028
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.721,
+        "x": 1.73,
+        "y": -5.729,
+        "z": 5.034
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.827,
+        "x": 3.775,
+        "y": -5.316,
+        "z": 4.836
+      },
+      {
+        "an": "schuerze",
+        "narbe_mm2": 0.778,
+        "x": 6.675,
+        "y": -4.232,
+        "z": 4.318
+      }
+    ],
+    "schwerpunkt_rand": 0.664,
+    "volumen_cap_mm3": 1307.0,
+    "volumen_fuss_mm3": 303.3
+  }
+}

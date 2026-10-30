@@ -1,0 +1,38 @@
+{
+  "keycap-daumen-a-L": [
+    76,
+    222
+  ],
+  "keycap-daumen-a-R": [
+    76,
+    318
+  ],
+  "keycap-daumen-b": [
+    76,
+    311
+  ],
+  "keycap-daumen-c-L": [
+    76,
+    30
+  ],
+  "keycap-daumen-c-R": [
+    76,
+    150
+  ],
+  "keycap-r1": [
+    73,
+    269
+  ],
+  "keycap-r2": [
+    71,
+    270
+  ],
+  "keycap-r2-homing": [
+    71,
+    270
+  ],
+  "keycap-r3": [
+    69,
+    89
+  ]
+}

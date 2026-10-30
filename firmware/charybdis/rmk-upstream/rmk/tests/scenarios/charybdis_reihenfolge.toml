@@ -1,0 +1,209 @@
+# Charybdis (29.10.2026): links zuerst gedrueckt, rechts zuerst losgelassen.
+#
+# Nachbau der Belegung: D ist Home-Row-Mod links (tippen D, halten Shift),
+# O eine normale Taste rechts, E eine normale Taste links. Zeiten wie in
+# Vial: Halten 150 ms, Flow-Tap an, prior_idle 50 ms, Normal-Modus.
+#
+# Gemeldetes Problem: schnell "do" getippt, O vor D losgelassen -> "od".
+
+[layout]
+rows = 1
+cols = 6
+map = """
+(0,0,L) (0,1,L) (0,2,R) (0,3,R) (0,4,L) (0,5,L)
+"""
+
+[[keymap.layer]]
+keys = """
+MT(D,LShift) E O MT(K,RShift) MT(F,LCtrl) C
+"""
+
+[behavior.morse]
+enable_flow_tap = true
+prior_idle_time = "50ms"
+normal_mode = true
+unilateral_tap = true
+hold_timeout = "150ms"
+
+# D nach einer Tipp-Pause von 80 ms (> 50 ms prior_idle). Bis 29.10.
+# kam hier "eod"; seit O zurueckgehalten wird, stimmt die Reihenfolge.
+[[test]]
+name = "heute_mitten_im_wort"
+steps = [
+  { tap = { pos = [0, 1], duration = 30 } },  # E
+  { delay = 80 },
+  { press = [0, 0] },    # D runter
+  { delay = 30 },
+  { press = [0, 2] },    # O runter
+  { delay = 30 },
+  { release = [0, 2] },  # O hoch (vor D!)
+  { delay = 20 },
+  { release = [0, 0] },  # D hoch
+]
+expect = [["E"], [], ["D"], ["D", "O"], ["D"], []]
+
+# Vorschlag 1: prior_idle 150 ms -> D mitten im Wort sofort als Tipp
+[[test]]
+name = "vorschlag_prior_idle_150"
+behavior.morse = { prior_idle_time = "150ms" }
+steps = [
+  { tap = { pos = [0, 1], duration = 30 } },
+  { delay = 80 },
+  { press = [0, 0] },
+  { delay = 30 },
+  { press = [0, 2] },
+  { delay = 30 },
+  { release = [0, 2] },
+  { delay = 20 },
+  { release = [0, 0] },
+]
+# D wird beim Druecken sofort als Tipp entschieden und bleibt gedrueckt,
+# bis du es loslaesst -- O kommt danach. Reihenfolge stimmt: "edo".
+expect = [["E"], [], ["D"], ["D", "O"], ["D"], []]
+
+# Am Wortanfang nach einer Pause ("do", O zuerst losgelassen): O wird
+# zurueckgehalten, beim Loslassen von O ist D ein Tipp -> "do".
+[[test]]
+name = "wortanfang_nach_pause"
+behavior.morse = { prior_idle_time = "150ms" }
+steps = [
+  { delay = 500 },
+  { press = [0, 0] },
+  { delay = 30 },
+  { press = [0, 2] },
+  { delay = 30 },
+  { release = [0, 2] },
+  { delay = 20 },
+  { release = [0, 0] },
+]
+expect = [["D"], ["D", "O"], ["D"], []]
+
+# Vorschlag 2: Permissive Hold am Wortanfang -> D wird Shift (grosses O)
+[[test]]
+name = "wortanfang_permissive_hold"
+behavior.morse = { prior_idle_time = "150ms", normal_mode = false, permissive_hold = true }
+steps = [
+  { delay = 500 },
+  { press = [0, 0] },
+  { delay = 30 },
+  { press = [0, 2] },
+  { delay = 30 },
+  { release = [0, 2] },
+  { delay = 20 },
+  { release = [0, 0] },
+]
+expect = [["LShift"], ["LShift", "O"], ["LShift"], []]
+
+# Mit Hand-Zuordnung (Unilateral Tap): D und danach E sind BEIDE links.
+# Der Druck auf E entscheidet D sofort als Buchstabe -> "de", auch am Wortanfang.
+[[test]]
+name = "gleiche_hand_unilateral"
+behavior.morse = { prior_idle_time = "150ms" }
+steps = [
+  { delay = 500 },
+  { press = [0, 0] },    # D (links)
+  { delay = 30 },
+  { press = [0, 1] },    # E (links)
+  { delay = 30 },
+  { release = [0, 1] },  # E hoch vor D
+  { delay = 20 },
+  { release = [0, 0] },
+]
+expect = [["D"], ["D", "E"], ["D"], []]
+
+# Zwei Home-Row-Mods derselben Hand zusammen halten (Ctrl+Shift+C im
+# Terminal). Mit Unilateral Tap wurde D beim Druck auf F sofort zum
+# Buchstaben -- man musste zwischen den Tasten je 150 ms warten.
+[[test]]
+name = "zwei_mods_gleiche_hand"
+behavior.morse = { prior_idle_time = "150ms" }
+steps = [
+  { delay = 500 },
+  { press = [0, 0] },    # D (Shift)
+  { delay = 20 },
+  { press = [0, 4] },    # F (Ctrl), gleiche Hand
+  { delay = 200 },       # beide laenger als 150 ms gehalten
+  { press = [0, 5] },    # C
+  { delay = 30 },
+  { release = [0, 5] },
+  { delay = 20 },
+  { release = [0, 4] },
+  { release = [0, 0] },
+]
+expect = [["LShift"], ["LShift", "LCtrl"], ["LShift", "LCtrl", "C"], ["LShift", "LCtrl"], ["LShift"], []]
+
+# "do" als Rolle, D zuerst losgelassen -> "do"
+[[test]]
+name = "rolle_d_zuerst_los"
+steps = [
+  { delay = 500 },
+  { press = [0, 0] },
+  { delay = 30 },
+  { press = [0, 2] },
+  { delay = 30 },
+  { release = [0, 0] },
+  { delay = 20 },
+  { release = [0, 2] },
+]
+expect = [["D"], ["D", "O"], ["O"], []]
+
+# D bewusst halten (Shift), dann O -> grosses O, trotz Zurueckhalten
+[[test]]
+name = "shift_halten_dann_o"
+steps = [
+  { delay = 500 },
+  { press = [0, 0] },
+  { delay = 60 },
+  { press = [0, 2] },
+  { delay = 150 },
+  { release = [0, 2] },
+  { delay = 20 },
+  { release = [0, 0] },
+]
+expect = [["LShift"], ["LShift", "O"], ["LShift"], []]
+
+# Zwei Home-Row-Mods auf verschiedenen Haenden gerollt ("dk" wie "sh"),
+# K zuerst losgelassen. Beide sind Tippen -> "dk".
+[[test]]
+name = "zwei_mods_verschiedene_haende_rolle"
+steps = [
+  { delay = 500 },
+  { press = [0, 0] },    # D (links)
+  { delay = 30 },
+  { press = [0, 3] },    # K (rechts)
+  { delay = 30 },
+  { release = [0, 3] },  # K hoch vor D
+  { delay = 20 },
+  { release = [0, 0] },
+]
+expect = [["D"], ["D", "K"], ["D"], []]
+
+# Dieselbe Rolle, D zuerst losgelassen -> "dk"
+[[test]]
+name = "zwei_mods_verschiedene_haende_d_zuerst"
+steps = [
+  { delay = 500 },
+  { press = [0, 0] },
+  { delay = 30 },
+  { press = [0, 3] },
+  { delay = 30 },
+  { release = [0, 0] },
+  { delay = 20 },
+  { release = [0, 3] },
+]
+expect = [["D"], [], ["K"], []]
+
+# D halten (Shift), dann K tippen -> grosses K (Shift+K)
+[[test]]
+name = "shift_links_dann_mod_rechts"
+steps = [
+  { delay = 500 },
+  { press = [0, 0] },
+  { delay = 60 },
+  { press = [0, 3] },
+  { delay = 150 },
+  { release = [0, 3] },
+  { delay = 20 },
+  { release = [0, 0] },
+]
+expect = [["LShift"], ["LShift", "K"], ["LShift"], []]

@@ -1,0 +1,74 @@
+{
+  "keycap-daumen-a-L": {
+    "fuss": false,
+    "kippung": 76,
+    "polygone": 51234,
+    "richtung": 222,
+    "schwerpunkt_hoehe_mm": 13.48,
+    "volumen_cap_mm3": 1273.5
+  },
+  "keycap-daumen-a-R": {
+    "fuss": false,
+    "kippung": 76,
+    "polygone": 51232,
+    "richtung": 318,
+    "schwerpunkt_hoehe_mm": 13.48,
+    "volumen_cap_mm3": 1273.5
+  },
+  "keycap-daumen-b": {
+    "fuss": false,
+    "kippung": 76,
+    "polygone": 51200,
+    "richtung": 311,
+    "schwerpunkt_hoehe_mm": 13.46,
+    "volumen_cap_mm3": 1307.1
+  },
+  "keycap-daumen-c-L": {
+    "fuss": false,
+    "kippung": 76,
+    "polygone": 50714,
+    "richtung": 30,
+    "schwerpunkt_hoehe_mm": 12.92,
+    "volumen_cap_mm3": 1456.3
+  },
+  "keycap-daumen-c-R": {
+    "fuss": false,
+    "kippung": 76,
+    "polygone": 50716,
+    "richtung": 150,
+    "schwerpunkt_hoehe_mm": 12.92,
+    "volumen_cap_mm3": 1456.3
+  },
+  "keycap-r1": {
+    "fuss": false,
+    "kippung": 73,
+    "polygone": 51378,
+    "richtung": 269,
+    "schwerpunkt_hoehe_mm": 10.65,
+    "volumen_cap_mm3": 1397.1
+  },
+  "keycap-r2": {
+    "fuss": false,
+    "kippung": 71,
+    "polygone": 50976,
+    "richtung": 270,
+    "schwerpunkt_hoehe_mm": 10.29,
+    "volumen_cap_mm3": 1185.9
+  },
+  "keycap-r2-homing": {
+    "fuss": false,
+    "kippung": 71,
+    "polygone": 51402,
+    "richtung": 270,
+    "schwerpunkt_hoehe_mm": 10.29,
+    "volumen_cap_mm3": 1186.6
+  },
+  "keycap-r3": {
+    "fuss": false,
+    "kippung": 69,
+    "polygone": 51472,
+    "richtung": 89,
+    "schwerpunkt_hoehe_mm": 10.77,
+    "volumen_cap_mm3": 1307.0
+  }
+}

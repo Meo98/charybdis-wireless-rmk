@@ -1,0 +1,17 @@
+# Rust-Builds
+target/
+**/*.rs.bk
+__pycache__/
+*.pyc
+.DS_Store
+
+# Nur lokal: unveränderte Vorlage von jools333 (eigenes .git) und Sicherungen
+firmware/fremd-charybdis/
+firmware/fertig-fremd-charybdis/
+firmware/sicherung-*/
+# Vorgebaute UF2 aus der Vorlage, passen nicht zu diesem Stand
+firmware/charybdis/dist/
+
+# Original-Leisten von pseudoku unverändert -> dort herunterladen
+3d-print/des-key-caps/jlc3dp-original/
+
